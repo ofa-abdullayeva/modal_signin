@@ -1,0 +1,57 @@
+/*Mixins*/
+@mixin flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin box-shadow {
+	box-shadow: 0 0 10px rgba(68, 68, 68, 0.6);
+}
+
+@mixin box-shadow-inset {
+	box-shadow: inset 0 0 10px rgba(68, 68, 68, 0.6);
+}
+
+@mixin toggle {
+	/*header toggle starts*/
+	.label {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		color: #394a56;
+
+		.toggle {
+			isolation: isolate;
+			position: relative;
+			height: 30px;
+			width: 60px;
+			border-radius: 15px;
+			overflow: hidden;
+			box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6,
+				4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;
+			margin-left: 1rem;
+			.toggle-state {
+				display: none;
+
+				&:checked ~ .indicator {
+					transform: translate3d(25%, 0, 0);
+				}
+			}
+			.indicator {
+				height: 100%;
+				width: 200%;
+				background: #ecf0f3;
+				border-radius: 15px;
+				transform: translate3d(-75%, 0, 0);
+				transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+				box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6;
+			}
+		}
+
+		.label-text {
+			margin-left: 0.7rem;
+		}
+	}
+	/*header toggle ends*/
+}

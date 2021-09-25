@@ -1,0 +1,70 @@
+/*==========BUTTONS START==========*/
+
+
+
+.btn-exit{
+    // position: absolute;
+    // bottom: 0;
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 30px;
+    font-weight: 700;
+    text-align: left;
+    border: none;
+}
+
+.btn{
+    background-color: $primary-color;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+
+    &:hover{
+       opacity: 0.8;
+    }
+}
+
+.next_btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        padding: 5px;
+        font-size: 15px;
+        color: $primary-color;
+        font-weight: 700;
+        
+    }
+}
+.button{
+    a{
+        font-size: 20px;
+        padding: 10px;
+        background-color: #488FCC;
+        border-radius: 10px;
+        cursor: pointer;
+        color: white !important;
+        transition: all .3s;
+        &:hover{
+            opacity: 0.6;
+        }
+    
+    }
+}
+
+
+.btn_close{
+    position: absolute;
+    top: 0;
+    right: 12px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+    color: white !important;
+    &:hover{
+        opacity: 0.3;
+    }
+}
+/*==========BUTTONS END==========*/

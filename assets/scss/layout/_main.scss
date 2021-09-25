@@ -1,0 +1,174 @@
+/*==========Main START==========*/
+main{
+   
+    // .sidenav{
+        
+    //     &-description{
+    //         position: fixed;
+    //         top: 0;
+    //         left: -300px;
+    //         width: 300px;
+    //         height: 100%;
+    //         z-index: 1000;
+    //         box-shadow: 5px 7px 10px rgba(0, 0, 0,.5);
+    //         background-color: $sidebar-color;
+    //         color: $secondary;
+    //         transition: all .5s ease-in;
+    //         overflow: scroll;
+           
+    
+    //         h1{
+    //             font-size: 15px;
+    //             text-align: center;
+    //             line-height: 15px;
+    //             padding: 15px;
+    //             color: white;
+    
+    //         }
+    
+          
+    //         ul{
+                
+    //             li{
+    //                  //  background-color: $primary-color;
+    //                  //  border-bottom: 1px solid;
+    //                 span{
+    //                    position: absolute;
+    //                    right: 10px;
+    //                    transition: all .5s ease-in;
+                      
+    //                 }
+    //                 &:hover{
+    //                     background-color: rgba(22,74,159 ,0.2);
+    //                 }
+                    
+    //             }
+               
+               
+    //             // li:hover a{
+    //             //     padding-left: 30px;
+                    
+    //             // }
+    //             a{
+    //                 display: block;
+    //                 height: 100%;
+    //                 width: 100%;
+    //                 line-height: 50px;
+    //                 font-size: 20px;
+    //                 color: white;
+    //                 padding-left: 15px;
+    //                 box-sizing: border-box;
+    //                 border-top: 1px solid $primary-color;
+    //                 border-bottom: 1px solid $primary-color;
+    //                 transition: all .5s ease-in;
+    //                 text-decoration: none;
+
+                   
+    //             }
+         
+
+    //             ul{
+                    
+    //                 background-color:$sidebar-color;
+    //                 width: 300px;
+    //                 li{
+    //                     background-color: #054768;
+    //                     margin-left: 5px;
+    //                     a{
+    //                         font-size: 15px;
+    //                         line-height: 30px;
+    //                         padding: 10px;
+    //                         text-decoration: none;
+                          
+    //                     }
+    //                     &:hover{
+    //                         background-color: #062738;
+    //                     }
+                      
+    //                 }
+    //             }
+    //         }
+            
+    //     }
+
+       
+    //     .closebtn{
+    //         position: absolute;
+	// 		top: 0;
+	// 		right: 12px;
+	// 		font-size: 36px;
+	// 		margin-left: 50px;
+    //     }
+    // }
+
+    .information{
+      
+     
+        .post-description{
+            p{
+                font-size: 14px;
+                padding: 20px 0;
+                line-height: 15px;
+            }
+        }
+
+        .services{
+            display: flex;
+            flex-direction: column;
+           
+            h2{
+                margin-top: 30px;
+                margin-bottom: 10px;
+                font-size: 22px;
+                color: $h2;
+            }
+            
+            li{
+               
+                a{
+                    font-size: 15px ;
+                    
+                }
+               
+            }
+        }
+    }
+
+
+    .active{
+        left: 0;
+    }
+
+    @media (min-width: 300px) and (max-width: 800px) {
+       
+        .information{
+            .post-description{
+                p{
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+            }
+
+            .services{
+                
+                h2{
+                    font-size: 17px;
+                }
+                h5{
+                    a{
+                        font-size: 12px;
+                    }
+                }
+            
+                
+            }
+            
+        }
+        
+    }
+  
+}
+
+
+
+/*==========MAIN END==========*/

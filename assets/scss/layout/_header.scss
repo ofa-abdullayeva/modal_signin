@@ -1,0 +1,209 @@
+/*==========HEADER START==========*/
+header {
+	
+
+	.header-top{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 10px  auto;
+		
+
+		.description{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin-left: 50px;
+			
+		}
+			
+		
+		h3{
+			
+			a{
+				font-size: 25px;
+				font-weight: 700;
+				color: $primary-color;
+				transition: all .5s ease-in;	
+			}
+			
+		}
+		figure{
+			width: 130px;
+			img{
+				width: 100%;
+				object-fit: cover;
+			}
+			
+		}
+	}
+
+	.nav{
+		display: flex;
+		.nav-list{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 0;
+			li{
+				padding: 8px;
+				transition:  all .5s ease-in;
+				border-radius: 5px;
+				
+
+				&:hover{
+					background-color: #042174;
+					
+					
+				}
+				a{
+					font-size: 14px;
+					color: white;
+				}
+			}
+			.active{
+				background-color: #042174;
+				border-radius: 5px;
+			
+			}
+
+			.closebtn{
+				display: none;
+			
+			}
+
+		}
+	
+		.show{
+			font-size: 15px;
+			color: white;
+		}
+		.show{
+			
+			display: none;
+			
+		}
+
+	}
+
+	@media (max-width: 909px){
+		.header-top{
+			figure{
+				width: 120px;
+				align-items: center;
+				
+				img{
+					width: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+		.nav{
+			
+			.show{
+				
+				display: block;
+			}
+			.nav-list{
+				padding: 50px;
+				position: fixed;
+				top: 0;
+				right: 0;
+				height: 100vh;
+				width: 100%;
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				background-color: $primary-color;
+				z-index: 100;
+				transition: all .5s;
+				transform: translateX(100%);
+
+				li{
+					padding: 5px;
+					a{
+						font-size: 16px;
+						padding: 3px;
+						
+					}
+				}
+				.closebtn{
+					display: block;
+					position: absolute;
+					top: 10px;
+					right: 40px;
+					font-size: 25px;
+					margin-left: 50px;
+					color: white;
+					text-decoration: none;
+					
+				}
+				
+				
+			
+			}
+		}
+		
+	}
+
+	.nav-active{
+		transform: translateX(0%) !important;
+		right: 0;
+	}
+
+ 
+	@media (min-width: 300px) and (max-width: 900px) {
+		.header-top{
+			.description{
+				h3{
+					a{
+						 font-size: 15px;;
+					}
+				}
+			}
+			
+		}
+		.nav{
+			ul{
+				li{
+					padding: 8px;
+					a{
+						font-size: 15px;
+					}
+				}
+			
+			}
+			
+		}
+		
+	}
+
+	@media (min-width: 800px){
+		.header-top{
+			.description{
+				h3{
+					a{
+						 font-size: 22px;;
+					}
+				}
+			}
+			
+		}
+		.nav{
+			ul{
+				li{
+					padding: 8px;
+					a{
+						font-size: 15px;
+					}
+				}
+			
+			}
+			
+		}
+	}
+	
+}
+
+
+/*==========HEADER END==========*/

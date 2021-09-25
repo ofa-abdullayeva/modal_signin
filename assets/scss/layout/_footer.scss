@@ -1,0 +1,20 @@
+/*==========FOOTER START==========*/
+
+footer{
+    font-size: 13px;
+    font-weight: 600;
+    background-color: $base-color;
+    color: $primary-color; 
+
+   span{
+    color: $primary-color ; 
+     }
+
+    .bg-bottom{
+        background-color: $footer-bottom;
+        color: $primary-color; 
+    }
+}
+
+
+/*==========FOOTER END==========*/

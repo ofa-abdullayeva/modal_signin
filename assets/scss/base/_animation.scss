@@ -1,0 +1,8 @@
+@keyframes modalSlideUp {
+    0%{
+        transform: translate(20%,20%);
+    }
+    100%{
+        transform: translate(-50%,-50%);
+    }
+}

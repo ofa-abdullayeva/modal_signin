@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+}
+html {
+	font-size: 62.5%;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	// background: linear-gradient(to top right,rgb(22,74,159),#f1f1f1,#BDDEF5);
+	background-color:rgba(0, 0, 0, 0.1) ;
+	
+}
+
+.container-fluid{
+	padding: 0;
+	background-color: #488FCC;
+
+}
+
+// .active{
+// 	display: block;
+// }

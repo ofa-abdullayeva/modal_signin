@@ -1,0 +1,152 @@
+/*========== Box  Start==========*/
+.boxes{
+    display: flex;
+    width: 100%;
+
+
+    .boxes-left,.boxes-right{
+        width: 50%;
+        // box-sizing: border-box; 
+    }
+   
+    .box{
+        position: relative;
+        margin: 10px 5px;
+        
+        .box-content{
+            width: 100%;
+            height: 80px;
+            cursor: pointer;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: white;
+
+            .content{
+                display: flex;
+                align-items: center;
+            }
+
+            h5{
+            
+                margin: 0;
+                padding: 10px;
+                font-weight: normal;
+               
+    
+                a{
+                    color: $secondary;
+                    align-content: flex-start;
+                }
+        
+            }
+            &:hover{
+                background-color: $primary-color;
+                transition: all .5s ease-in;
+               
+                h5 a{
+                    color: white;
+                }
+               
+               
+            }
+            // &:hover h5 a{
+                
+            //     color: white;
+            //     transition: all .5s ease-in;
+            // }
+            .icon{
+                padding: 10px;
+                background-color: $primary-color;
+                border-radius: 50%;
+                color: $base-color;
+                font-size: 10px;
+              
+            }
+       
+        }
+    
+     
+    
+        .sub{
+            position: absolute;
+            right: 30px;
+            bottom: .5px;
+            width: 100px;
+            height: 30px;
+            background-color: $base-color;
+            display:none;
+            border-radius: 5px;
+    
+            .sub-menu{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px;
+                position: relative;
+                a{
+                    font-size: 15px;
+                    padding: 3px 3px;
+                    margin: 5px;
+                    border-radius: 5px;
+                    color: $primary-color;
+                    &:hover{
+                        background-color: $primary-color;
+                        color: white;
+                    }
+                }
+                .content{
+                    font-size: 10px;
+                    z-index: 100;
+                    padding: 5px;
+                    position: absolute;
+                    top:  32px;
+                    width: 140px;
+                    background-color: $sidebar-color;
+                    color: white;
+                    text-align: center;
+                    display: none;
+                    
+                   
+                }
+            }
+        }
+    
+        .sub-active{
+            display: block !important;
+
+        }
+    
+        .bars {
+            font-size: 25px;
+            margin: 3px;
+          
+            text-align: center;
+            border-radius: 50%;
+            
+           
+        }
+        &:hover a{
+            color: white;
+            text-decoration: none;
+        }
+    
+    }
+   
+}
+
+@media (max-width: 1024px) {
+  
+    .boxes{
+        flex-direction: column;
+        align-items: center;
+        .boxes-left,.boxes-right{
+            width: 100%;
+        }
+      }
+    
+  }
+  
+/*========== Box  End ==========*/
