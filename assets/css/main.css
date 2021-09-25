@@ -25,16 +25,22 @@ body {
   background-color: #488FCC;
 }
 
-@keyframes modalSlideUp {
-  0% {
-    transform: translate(20%, 20%);
-  }
-  100% {
-    transform: translate(-50%, -50%);
-  }
+/*==========BUTTONS START==========*/
+.btn-outline-sign {
+  background-color: transparent;
+  color: #164a9f;
+  border: 1px solid;
+  transition: all 0.5s ease-in;
+  padding: 5px 12px;
+  border-radius: 10px;
+  font-size: 16px;
 }
 
-/*==========BUTTONS START==========*/
+.btn-outline-sign:hover {
+  background-color: #063146;
+  color: #f1f1f1;
+}
+
 .btn-exit {
   font-size: 16px;
   width: 100%;
@@ -42,60 +48,6 @@ body {
   font-weight: 700;
   text-align: left;
   border: none;
-}
-
-.btn {
-  background-color: #164a9f;
-  padding: 10px;
-  margin-bottom: 10px;
-  color: white;
-  font-size: 14px;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  opacity: 0.8;
-}
-
-.next_btn {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.next_btn a {
-  padding: 5px;
-  font-size: 15px;
-  color: #164a9f;
-  font-weight: 700;
-}
-
-.button a {
-  font-size: 20px;
-  padding: 10px;
-  background-color: #488FCC;
-  border-radius: 10px;
-  cursor: pointer;
-  color: white !important;
-  transition: all .3s;
-}
-
-.button a:hover {
-  opacity: 0.6;
-}
-
-.btn_close {
-  position: absolute;
-  top: 0;
-  right: 12px;
-  font-size: 36px;
-  margin-left: 50px;
-  cursor: pointer;
-  color: white !important;
-}
-
-.btn_close:hover {
-  opacity: 0.3;
 }
 
 /*==========BUTTONS END==========*/
@@ -231,73 +183,9 @@ body {
 }
 
 /*========== Box  End ==========*/
-.signin {
-  width: 70vh;
-  height: auto;
-  background-color: #a6c2db;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 20px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  z-index: 10000;
-  animation-name: modalSlideUp;
-  animation-duration: 1s;
-  display: none;
-}
-
-.signin h2 {
-  text-align: center;
-  color: #164a9f;
-  padding: 20px;
-  font-size: 26px;
-}
-
-.signin .avatar {
-  width: 100px;
-  height: 50px;
-  border-radius: 50%;
-  text-align: center;
-}
-
-.signin .avatar img {
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.signin_box {
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-}
-
-.signin_box input {
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: none;
-}
-
-.signin_box .captcha {
-  width: 100px;
-  height: 50px;
-}
-
-.signin_box .captcha img {
-  border-radius: 5px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 /*==========HEADER START==========*/
 header .header-top {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin: 10px  auto;
 }
 

@@ -4,8 +4,6 @@ header {
 
 	.header-top{
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
 		margin: 10px  auto;
 		
 
@@ -53,6 +51,8 @@ header {
 
 				&:hover{
 					background-color: #042174;
+					// border-bottom: 3px solid ;
+					// border: 1px solid #f1f1f1;
 					
 					
 				}
@@ -64,7 +64,8 @@ header {
 			.active{
 				background-color: #042174;
 				border-radius: 5px;
-			
+				// border: 1px solid #f1f1f1;
+				// border-radius: 10px;
 			}
 
 			.closebtn{
@@ -85,13 +86,65 @@ header {
 		}
 
 	}
+	  // RESPONSIVE  DESIGN //
+	// @media (min-width: 1048px){
+	// 	.header-top{
+	// 		figure{
+	// 			width: 100px;
+	// 			align-items: center;
+	// 			// margin-right: 40px;
+	// 			img{
+	// 				width: 100%;
+	// 				object-fit: cover;
+	// 			}
+	// 		}
+	// 		h3{
+	// 			a{
 
+	// 			}
+	// 		}
+	// 	}
+	// 	.nav{
+	// 		ul{
+	// 			a{
+	// 				font-size: 12px;
+	// 			}
+	// 		}
+	// 	}
+	// }
+	// @media (min-width: 300px) and (max-width: 767px){
+	// 	.header-top{
+	// 		figure{
+	// 			width: 100px;
+	// 			align-items: center;
+	// 			// margin-right: 40px;
+	// 			img{
+	// 				width: 100%;
+	// 				object-fit: cover;
+	// 			}
+	// 		}
+	// 		.description{
+	// 			h3{
+	// 				a{
+	// 					font-size: 16px;
+	// 				}
+	// 			}
+	// 		}
+		
+	// 	}
+	// 	.nav{
+	// 		.nav-list{
+	// 			display: none;
+	// 		}
+			
+	// 	}
+	// }
 	@media (max-width: 909px){
 		.header-top{
 			figure{
 				width: 120px;
 				align-items: center;
-				
+				// margin-right: 40px;
 				img{
 					width: 100%;
 					object-fit: cover;
@@ -124,7 +177,8 @@ header {
 					a{
 						font-size: 16px;
 						padding: 3px;
-						
+						// background-color: #042174;
+						// border-bottom: 3px solid ;
 					}
 				}
 				.closebtn{
